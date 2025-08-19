@@ -1,12 +1,12 @@
 # Bank-Database
 Used MySQL to build a standard bank database. 
 
-#🌍 AFRICA_BANK Database Schema
+# 🌍 AFRICA_BANK Database Schema
 
-###This project is a relational database design for a core banking system called AFRICA_BANK.
+### This project is a relational database design for a core banking system called AFRICA_BANK.
 It models customers, accounts, loans, insurance, stock investments, mortgages, employees, HR, and more — representing the essential operations of a modern financial institution.
 
-###📌 Features
+### 📌 Features
 
 Customer Management – Track customer personal details and linked accounts.
 
@@ -28,8 +28,8 @@ Mortgages – Home loan and mortgage management.
 
 Service Requests – BVN and ATM card requests linked to customers.
 
-##🏗️ Database Schema
-###customers
+## 🏗️ Database Schema
+### customers
 CREATE TABLE Customers (
     CustomerID INT AUTO_INCREMENT PRIMARY KEY,
     FirstName VARCHAR(100),
@@ -39,7 +39,7 @@ CREATE TABLE Customers (
     Address TEXT
 );
 
-###Accounts
+### Accounts
 CREATE TABLE Accounts (
     AccountID INT AUTO_INCREMENT PRIMARY KEY,
     CustomerID INT,
@@ -50,7 +50,7 @@ CREATE TABLE Accounts (
 );
 
 
-###Loans
+### Loans
 CREATE TABLE Loans (
     LoanID INT AUTO_INCREMENT PRIMARY KEY,
     CustomerID INT,
@@ -62,7 +62,7 @@ CREATE TABLE Loans (
 );
 
 
-###Transaction
+### Transaction
 CREATE TABLE Transactions (
     TransactionID INT AUTO_INCREMENT PRIMARY KEY,
     AccountID INT,
